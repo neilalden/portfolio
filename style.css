@@ -1,132 +1,127 @@
 html {
-    scroll-behavior: smooth;
-  }
-  body{
-    background: #002d4d;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
-text-align: center;
+	overflow-y: hidden;
+	font-family: "Comfortaa", cursive;
 }
-h2{
-  margin: 0;
-  padding: 25px;
+body {
+	background-color: #e8ccb0;
 }
-.parallax { 
-    /* The image used */
-    background-image: url("zxc.jpg");
-    /* Set a specific height */
-    height: 100vh; 
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #about .container{
-    min-height: 480px ; 
-    width: auto;
-    background-image: linear-gradient(to bottom right, #004a80, #000f1a);
-  }
-  #project .container{
-    min-height: 100vh ; 
-    width: auto;
-    background-image: linear-gradient(to top right, #004a80, #000f1a);
-    margin: 0%;
-    padding: 0%;
-  }
-  #project .container h2{
-    padding: 50px;
-  }
-header{
-    position: fixed;
-    z-index: 3;
+::-webkit-scrollbar {
+	width: 10px;
 }
-section{
-    overflow: hidden;
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 10px;
 }
-li{
-    list-style: none;
+::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 10px;
 }
-header li a{
-    text-decoration: none;
-    color: #fff;
-    transition: 1s;
-    padding: 0px 4px;
-    border-radius: 2px;
+::-webkit-scrollbar-thumb:hover {
+	background: #fff;
 }
-header li a:hover {
-    background: #fff;
-    color: #001e33;
+#fixedContainer {
+	height: 500px;
+	width: 70%;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-y: overlay;
+	padding: 3px;
+	position: absolute;
+	border-radius: 15px;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-.centered {
-    position: absolute;
-text-align: center;
-left: 1%;
-right: 1%;
-margin-top: 10%;
-  }
-  span{
-      color: aquamarine;
-  }
-  h1{
-      font-size: 80px;
-      position: relative;
-      text-shadow: -1px 3px #000;
-  }
-  a{
-    text-decoration: none;
-    color: #fff;
-    border-radius: 2px;}
-  div.gallery {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-image: url("1.png");
-    background-size:20%;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-  }
-  div.gallery img:hover {
-    opacity: .3;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: 200px;
-    transition: .3s;
-  }
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
+section {
+	background-color: #fff4e6;
+	width: 100% - 20px;
+	margin: 2px 15px;
+	padding: 10px;
+	border-radius: 15px;
+}
+section#personalInfo {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.sectionContainer {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: 600px;
+}
+#myPict {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	background-color: #ccc;
+	margin: auto;
+	object-fit: cover;
+}
+#myDescription {
+	width: 60%;
+	margin: auto;
+}
+section#bestProjects {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.cardsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+.card {
+	max-width: 50%;
+	min-width: 300px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 15px;
+	background: #fff;
+	transition: ease-out 0.3s;
+	cursor: pointer;
+}
+#card-top-right:hover {
+	transform: scale(2) translate(-25%, 25%);
 
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-    #project .container h2{
-      padding: 0 !important;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
+	box-shadow: -5px 5px #ffe9cc;
+}
+#card-top-left:hover {
+	transform: scale(2) translate(25%, 25%);
 
-  
+	box-shadow: 5px 5px #ffe9cc;
+}
+#card-bottom-right:hover {
+	transform: scale(2) translate(-25%, -25%);
+
+	box-shadow: -5px -5px #ffe9cc;
+}
+#card-bottom-left:hover {
+	transform: scale(2) translate(25%, -25%);
+
+	box-shadow: 5px -5px #ffe9cc;
+}
+@media only screen and (max-width: 600px) {
+	#fixedContainer {
+		width: 100%;
+		height: 90vh;
+		margin: 0;
+		padding: 0;
+	}
+	section {
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+	#fixedContainer {
+		width: 80%;
+		height: 70vh;
+	}
+}
+
+@media screen and (max-width: 99999px) and (min-width: 1200px) {
+	#fixedContainer {
+		width: 900px;
+	}
+}
