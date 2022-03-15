@@ -298,18 +298,6 @@ section#moreAboutMe {
 	width: 100%;
 	display: none;
 }
-.content:hover {
-	padding: 0;
-}
-.content:hover > p {
-	display: none;
-}
-.content:hover > h4 {
-	display: none;
-}
-.content:hover > img {
-	display: initial;
-}
 .info-icon {
 	height: 20px;
 	width: 20px;
