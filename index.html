@@ -11,33 +11,49 @@
 			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
 		<title>escobin</title>
 	</head>
-	<body>
+	<body id="body">
 		<div id="fixedContainer">
 			<section id="personalInfo">
 				<div class="section-container">
-					<img
-						src="https://scontent.fmnl2-2.fna.fbcdn.net/v/t39.30808-6/271121295_643747743492225_3808273101587916575_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHMIRehDcndtI3Ji-HUGvaUpbU61MwCp1iltTrUzAKnWDvCh8DtzWwaLj_rA7QsKUbiQjcdbKYee8EaB69eT2dl&_nc_ohc=dBJlrpuq3qEAX_Crl0d&tn=viNJ-P8NqhogkL83&_nc_ht=scontent.fmnl2-2.fna&oh=00_AT_DB42plxd2zeQiG9YWGRRIqBuH5we3f7DMcVMbjTxb8Q&oe=622BB0B1"
-						alt="me"
-						id="myPict"
-					/>
+					<img src="assets/me.jpg" alt="me" id="myPict" />
 					<div id="myDescription">
 						<h3>Hi, I'm Neil</h3>
 						<!-- <span>escobin.neil@gmail.com</span>
-					<br>
-					<span>+63-997-644-7771 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+						<br>
+						<span>+63-997-644-7771 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+						<div class="socials-container">
+							<a href="https://github.com/neilalden" target="_blank">
+								<img src="assets/github.svg" alt="github.com/neilalden" />
+							</a>
+							<a href="https://www.facebook.com/neilEscobinn" target="_blank">
+								<img src="assets/facebook.svg" alt="github.com/neilalden" />
+							</a>
+							<a href="https://www.instagram.com/neilescobin" target="_blank">
+								<img src="assets/instagram.svg" alt="github.com/neilalden" />
+							</a>
+						</div>
 						<p>
 							I've been teaching myself how to code since I started college,
 							learning different technologies I find interesting.
 						</p>
+						<a href="/assets/Resume Neil Alden Escobin.pdf" download>
+							Download my resume
+						</a>
 					</div>
 				</div>
 			</section>
 			<section id="bestProjects">
 				<!-- <h4>My favortite projects from last year</h4> -->
 				<div class="cardsContainer">
-					<div id="card-top-left" class="card">
+					<div id="" class="card card-top-left">
 						<div
 							id="read-app-vid-container"
 							style="position: relative; height: 100%"
@@ -63,9 +79,16 @@
 								I studied react native for this project and understood what it's
 								really like to work with an open source framework.
 							</p>
+							<p>
+								<a
+									href="https://play.google.com/store/apps/details?id=com.readappv1"
+									target="_blank"
+									>view project</a
+								>
+							</p>
 						</div>
 					</div>
-					<div id="card-top-right" class="card">
+					<div id="" class="card card-top-right">
 						<div
 							id="crime-prediction-vid-container"
 							style="position: relative; height: 100%"
@@ -87,15 +110,22 @@
 						</div>
 						<div class="vid-description-container">
 							<p>
-								My thesis advisor asked for help with his project with NBI and
+								My thesis advisor asked for help with his project with PNP and
 								provided a dataset of crimes in our province which I used to
 								develop various algorithm and made an API for it, however given
 								that only 3000 rows of data were usable, the accuracy of the
 								algorithms are low.
 							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/crime-prediction/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
 						</div>
 					</div>
-					<div id="card-bottom-left" class="card">
+					<div id="" class="card card-bottom-left">
 						<div
 							id="contact-tracing-app-vid-container"
 							style="position: relative; height: 100%"
@@ -121,9 +151,14 @@
 								learned to rely on the library documentation instead of looking
 								for an article or youtube video.
 							</p>
+							<p>
+								<a href="https://tracing.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
 						</div>
 					</div>
-					<div id="card-bottom-right" class="card">
+					<div id="" class="card card-bottom-right">
 						<div
 							id="sort-visualizer-vid-container"
 							style="position: relative; height: 100%"
@@ -149,60 +184,380 @@
 								project showing how sorting algorithms work. I learned here how
 								difficult it is to sync the front-end to the sorting algorithm.
 							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/sort-visualizer/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-left">
+						<div
+							id="typehoon-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/792a1d91e3094772ade459fbfa0ed0ef"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Made this project with an app written in react native and a
+								descrete event simulation written in python and made an API for
+								it in python. This project is for my friend's undergraduate
+								thesis for our municipality's typhoon evacuation plan.
+							</p>
+							<p>
+								<a href="https://type-hoon.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-right">
+						<div
+							id="quiz-app-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/cb2789a698224b9aa3c0ae09fbdeb89d"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Did this project just for fun. Just played with Open Trivia
+								Database and Semantic UI.
+							</p>
+							<p>
+								<a href="https://quiz-app-45900.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-left">
+						<div
+							id="color-flikker-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/d0934ec60f1e4e428dc0a7c568246d28"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Did a lot of small projects and this is one of the cleanest. I
+								made this to get myself comfortable with front-end specifically
+								javascript.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/color_flikker/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-right">
+						<div
+							id="weight-converter-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/f09169ce64d04be1b1a0fbc472d8f2c9"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								I started learning javascript in my freshman year. I kept
+								hearing about javascript DOM manipulation in youtube so I made a
+								project to familiarize myself with it.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/weight_converter/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<!--  -->
+					<div id="" class="card card-bottom-left">
+						<div
+							id="lotus-golden-circle-vid-container"
+							class="slideshow-container"
+						>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/1.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/2.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/3.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/4.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/5.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/6.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="/assets/lotus/7.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+
+						<div class="vid-description-container">
+							<p>
+								I was studying laravel at the time I made this. This is my first
+								paid project which my friend had asked me to make for their
+								company although the project was cancelled.
+							</p>
+							<p>
+								<a
+									href="https://github.com/neilalden/lotus_golden_circle"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-right">
+						<div id="inventory-vid-container" class="slideshow-container">
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/1.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/2.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/3.jpg"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/4.jpg"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/5.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="/assets/inventory/6.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								This project is a desktop app made with c# using windows form
+								and MySQL. Made this for our finals in my freshman year.
+							</p>
+							<p>
+								<a
+									href="https://github.com/neilalden/Inventory_System"
+									target="_blank"
+									>view project</a
+								>
+							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- <section id="moreAboutMe">
-				<div class="section-container">
-					<h4>More about me</h4>
-					<p>
-						My passion for programming started when I entered college, I'm
-						currently a 4<sup>th</sup> year CS major at Laguna State Polytechnic
-						University, Los Baños. I was the selected president of Great
-						Innovators Of Computer Technology Society from 2019 to 2020. D	id
-						online courses such as freeCodeCamp's Responsive Web Design and
-						JavaScript Algorithms and Data Structures, Object-Oriented Design by
-						University of Alberta from coursera and free courses at youtube like
-						MIT 6.006 Introduction to Algorithms
-					</p>
-				</div>
-			</section> -->
 			<section id="timeline">
 				<!-- <h4>Things I did during college</h4> -->
 				<div class="timeline">
 					<div class="container left">
 						<div class="content">
-							<h4>2021</h4>
+							<h4 style="text-decoration: underline">2021</h4>
 							<p>
 								Participated in 5<sup>th</sup> International Research Conference
-								on Innovations in Engineering, Science and Technology
+								on Innovations in Engineering, Science and Technology hosted by
+								Batangas State University.
 							</p>
-							<img src="assets/2021.jpg" alt="IRCIEST conference" />
+							<img
+								src="assets/2021.JPG"
+								alt="IRCIEST conference"
+								class="img-cover"
+							/>
 						</div>
 					</div>
 					<div class="container right">
 						<div class="content">
-							<h4>2019-2020</h4>
+							<h4 style="text-decoration: underline">2019-2020</h4>
 							<p>
 								Became the president of Great Innovators Of Computer Technology
-								Society and held seminars
+								Society and held seminars.
 							</p>
-							<img src="assets/2019.png" alt="giocotech seminar" />
+							<img
+								src="assets/2019.png"
+								alt="giocotech seminar"
+								class="img-cover"
+							/>
 						</div>
 					</div>
 					<div class="container left">
 						<div class="content">
-							<h4>2018</h4>
+							<h4 style="text-decoration: underline">2018</h4>
 							<p>
-								Enrolled for computer science and won our college coding
-								competition
+								Enrolled in computer science and won our college coding
+								competition.
 							</p>
-							<img src="assets/2018.jpg" alt="ccs night" />
+							<img src="assets/2018.jpg" alt="ccs night" class="img-cover" />
 						</div>
 					</div>
 				</div>
 			</section>
+			<section id="moreAboutMe">
+				<div class="section-container"></div>
+			</section>
 		</div>
 	</body>
+	<script src="index.js"></script>
 </html>
