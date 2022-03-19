@@ -287,22 +287,8 @@ section#moreAboutMe {
 	background-color: white;
 	position: relative;
 	border-radius: 15px;
-	cursor: pointer;
-	transition: ease-out 0.4s;
 	overflow: hidden;
 	min-height: 200px;
-}
-.content .img-cover {
-	object-fit: cover;
-	height: 200px;
-	width: 100%;
-	display: none;
-}
-.info-icon {
-	height: 20px;
-	width: 20px;
-	margin: 0;
-	margin-left: 10px;
 }
 .socials-container a {
 	text-decoration: none;
