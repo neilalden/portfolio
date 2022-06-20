@@ -118,6 +118,12 @@ section#bestProjects {
 	z-index: 2 !important;
 	width: 300px;
 }
+.card-bottom-center:hover {
+	transform: scale(2) translateY(-25%);
+	box-shadow: -5px -5px #ffe9cc;
+	z-index: 2 !important;
+	width: 300px;
+}
 .card-bottom-left:hover {
 	transform: scale(2) translate(25%, -25%);
 	box-shadow: 5px -5px #ffe9cc;
@@ -128,15 +134,19 @@ section#bestProjects {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
+.card-top-right:hover > #esentry-vid-container {
+	height: 50% !important;
+	/* width: 60% !important; */
+}
 .card-top-right:hover > #crime-prediction-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-left:hover > #contact-tracing-app-vid-container {
+.card-bottom-right:hover > #contact-tracing-app-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-right:hover > #sort-visualizer-vid-container {
+.card-bottom-left:hover > #sort-visualizer-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
@@ -144,24 +154,24 @@ section#bestProjects {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-top-right:hover > #quiz-app-vid-container {
+.card-top-left:hover > #quiz-app-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-left:hover > #color-flikker-vid-container {
+.card-top-right:hover > #color-flikker-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-right:hover > #weight-converter-vid-container {
+.card-bottom-left:hover > #weight-converter-vid-container {
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-left:hover > #lotus-golden-circle-vid-container {
+.card-bottom-right:hover > #lotus-golden-circle-vid-container {
 	padding-top: 0 !important;
 	height: 50% !important;
 	/* width: 60% !important; */
 }
-.card-bottom-right:hover > #inventory-vid-container {
+.card-bottom-center:hover > #inventory-vid-container {
 	padding-top: 0 !important;
 	height: 50% !important;
 	/* width: 60% !important; */
@@ -375,6 +385,13 @@ section#moreAboutMe {
 		box-shadow: 5px 5px #ffe9cc;
 	}
 	.card-bottom-right:hover {
+		transform: none;
+		box-shadow: 5px 5px #ffe9cc;
+	}
+	.card-bottom-center {
+		box-shadow: 5px 5px #ffe9cc;
+	}
+	.card-bottom-center:hover {
 		transform: none;
 		box-shadow: 5px 5px #ffe9cc;
 	}
