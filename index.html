@@ -8,275 +8,609 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<title>neil escobin</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<title>escobin</title>
 	</head>
-	<body>
-		<main class="flex-row">
-			<div class="skew" style="border-top-left-radius: 15%">
-				<section id="details">
-					<div id="profile">
-						<div class="flex-row">
-							<div class="img-profile">
-								<img src="assets/me.jpg" alt="Me pic" />
-							</div>
-							<div>
-								<div class="name">
-									<h1 class="text-no-wrap">Neil Alden Escobin</h1>
-								</div>
-								<div class="socials">
-									<a href="http://facebook.com/neilEscobinn" target="_blank">
-										<img
-											src="assets/icons/facebook.png"
-											alt="facebook.com/neilEscobinn"
-											class="img-icon"
-									/></a>
-
-									<a href="http://github.com/neilalden" target="_blank">
-										<img
-											src="assets/icons/github.png"
-											alt="github.com/neilalden"
-											class="img-icon"
-									/></a>
-									<a href="http://linkedin.com/in/neilescobin/" target="_blank">
-										<img
-											src="assets/icons/linkedin.png"
-											alt="linkedin.com/in/neilescobin/"
-											class="img-icon"
-										/>
-									</a>
-								</div>
-							</div>
+	<body id="body">
+		<div id="fixedContainer">
+			<section id="personalInfo">
+				<div class="section-container">
+					<img src="assets/me.jpg" alt="me" id="myPict" />
+					<div id="myDescription">
+						<h3>Hi, I'm Neil</h3>
+						<!-- <span>escobin.neil@gmail.com</span>
+						<br>
+						<span>+63-997-644-7771 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+						<div class="socials-container">
+							<a href="https://github.com/neilalden" target="_blank">
+								<img src="assets/github.svg" alt="github.com/neilalden" />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/neilescobin/"
+								target="_blank"
+							>
+								<img
+									src="assets/linkedin.svg"
+									alt="linkedin.com/in/neilescobin"
+								/>
+							</a>
+							<a href="https://www.instagram.com/neilescobin" target="_blank">
+								<img
+									src="assets/instagram.svg"
+									alt="instagram.com/neilescobin"
+								/>
+							</a>
 						</div>
-
-						<div class="contact-info">
-							<p>(+63) 997-644-7771 | escobin.neil@gmail.com</p>
-						</div>
-						<div id="quote">
-							<h3>
-								A SELF STARTER AND PROACTIVE DEVELOPER WHO ENJOYS BUILDING APPS
-								WITH MACHINE LEARNING MODELS.
-							</h3>
-						</div>
+						<p>
+							I've been teaching myself how to code since I started college,
+							learning different technologies I find interesting.
+						</p>
+						<a href="assets/Resume Neil Alden Escobin.pdf" download>
+							Download my resume
+						</a>
 					</div>
-					<div id="skills">
-						<h2>SKILL CONFIDENCE</h2>
-						<div class="flex-row align-items-center">
-							<h3>80%</h3>
-							<progress value="80" max="100">80%</progress>
+				</div>
+			</section>
+			<section id="bestProjects">
+				<div class="cardsContainer">
+					<div id="" class="card card-top-left">
+						<div
+							id="read-app-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/b2efa17e062d4a8c9a0e5eb0d9fe8252"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
 						</div>
-						<div class="skill-level flex-row">
-							<div class="skill-item">
-								<img
-									src="assets/icons/react.png"
-									alt="react"
-									class="img-icon"
-								/>
-								<p class="icon-text">React.Js &</p>
-								<p class="icon-text">React Native</p>
-							</div>
-							<div class="skill-item">
-								<img src="assets/icons/git.png" alt="git" class="img-icon" />
-								<p class="icon-text">Git</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/firebase.png"
-									alt="firebase"
-									class="img-icon"
-								/>
-								<p class="icon-text">Firebase</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/javascript.png"
-									alt="javascript"
-									class="img-icon"
-								/>
-								<p class="icon-text">Javascript</p>
-							</div>
-							<div class="skill-item">
-								<img src="assets/icons/html.png" alt="html" class="img-icon" />
-								<p class="icon-text">Html</p>
-							</div>
-							<div class="skill-item">
-								<img src="assets/icons/css.png" alt="css" class="img-icon" />
-								<p class="icon-text">Css</p>
-							</div>
-						</div>
-
-						<div class="flex-row align-items-center">
-							<h3>70%</h3>
-							<progress value="70" max="100">70%</progress>
-						</div>
-						<div class="skill-level flex-row">
-							<div class="skill-item">
-								<img
-									src="assets/icons/nextjs.png"
-									alt="nextjs"
-									class="img-icon"
-								/>
-								<p class="icon-text">Next.Js</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/nodejs.png"
-									alt="nodejs"
-									class="img-icon"
-								/>
-								<p class="icon-text">Node.Js</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/python.png"
-									alt="python"
-									class="img-icon"
-								/>
-								<p class="icon-text">Python</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/sklearn.png"
-									alt="sklearn"
-									class="img-icon"
-								/>
-								<p class="icon-text">Scikit Learn</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/numpy.png"
-									alt="numpy"
-									class="img-icon"
-								/>
-								<p class="icon-text">Numpy</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/pandas.png"
-									alt="pandas"
-									class="img-icon"
-								/>
-								<p class="icon-text">Pandas</p>
-							</div>
-						</div>
-						<div class="flex-row align-items-center">
-							<h3>50%</h3>
-							<progress value="50" max="100">50%</progress>
-						</div>
-						<div class="skill-level flex-row">
-							<div class="skill-item">
-								<img
-									src="assets/icons/postgresqk.png"
-									alt="Postgresql"
-									class="img-icon"
-								/>
-								<p class="icon-text">Postgresql</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/flask.png"
-									alt="flask"
-									class="img-icon"
-								/>
-								<p class="icon-text">Flask</p>
-							</div>
-							<div class="skill-item">
-								<img
-									src="assets/icons/tensorflow.png"
-									alt="tensorflow"
-									class="img-icon"
-								/>
-								<p class="icon-text">Tensorflow</p>
-							</div>
-						</div>
-						<div class="flex-row align-items-center">
-							<h3>30%</h3>
-							<progress value="30" max="100">30%</progress>
-						</div>
-						<div class="skill-level flex-row">
-							<div class="skill-item">
-								<img
-									src="assets/icons/csharp.png"
-									alt="csharp"
-									class="img-icon"
-								/>
-								<p class="icon-text">C#</p>
-							</div>
-							<div class="skill-item">
-								<img src="assets/icons/java.png" alt="java" class="img-icon" />
-								<p class="icon-text">Java</p>
-							</div>
-
-							<div class="skill-item">
-								<img
-									src="assets/icons/mysql.png"
-									alt="mysql"
-									class="img-icon"
-								/>
-								<p class="icon-text">MySQL</p>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="skew" style="z-index: 0 !important; margin-left: 2px">
-				<section id="projects">
-					<div class="video-container">
-						<iframe
-							style="width: 100%; height: 100%"
-							src="https://www.loom.com/embed/b2efa17e062d4a8c9a0e5eb0d9fe8252"
-							frameborder="0"
-							webkitallowfullscreen
-							mozallowfullscreen
-							allowfullscreen
-						></iframe>
-					</div>
-					<div class="flex-row">
-						<div class="left-control">
-							<button><img src="assets/icons/left.png" alt="left" /></button>
-						</div>
-						<div class="video-description">
-							<h1>Tech Stack Used</h1>
-							<div class="skill-level flex-row">
-								<div class="skill-item">
-									<img
-										src="assets/icons/react.png"
-										alt="react"
-										class="img-icon"
-									/>
-									<p class="icon-text">React Native</p>
-								</div>
-								<div class="skill-item">
-									<img
-										src="assets/icons/firebase.png"
-										alt="firebase"
-										class="img-icon"
-									/>
-									<p class="icon-text">Firebase</p>
-								</div>
-							</div>
-							<h3>
+						<div class="vid-description-container">
+							<p>
 								This project is a collaboration of Los Baños Science Community
 								Foundation, Inc, University of the Philippines - Los Baños, and
 								Laguna State Polytechnic University. I studied react native for
 								this project and understood what it's really like to work with
 								an open source framework.
-							</h3>
-						</div>
-						<div class="right-control">
-							<button><img src="assets/icons/right.png" alt="right" /></button>
+							</p>
+							<p>
+								<a
+									href="https://play.google.com/store/apps/details?id=com.readappv1"
+									target="_blank"
+									>view project</a
+								>
+							</p>
 						</div>
 					</div>
-					<div class="navigation flex-row">
-						<div class="nav-item nav-item-active"></div>
-						<div class="nav-item"></div>
-						<div class="nav-item"></div>
+					<div id="" class="card card-top-right">
+						<div
+							id="esentry-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/ab6219642cf14a5f8ff8ad715c80e90d"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								For my internship, I was tasked to make an app for the project
+								our college department was conducting about water quality
+								monitoring and forecasting system in tadlac lake. And because I
+								finished it in a week, I also made a time series forecasting
+								model and deployed it in a flask API.
+							</p>
+							<p>
+								<a href="https://github.com/neilalden/esentry/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
 					</div>
-				</section>
-			</div>
-		</main>
+
+					<div id="" class="card card-bottom-left">
+						<div
+							id="sort-visualizer-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/48e6027c89344d638bf2ebed35390b17"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								I got hooked on solving data structures and algorithms problem
+								on leetcode and decided that I'd make a project showing how
+								sorting algorithms work. I learned about animations here.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/sort-visualizer/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-right">
+						<div
+							id="contact-tracing-app-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/72f94533f29949b8ad4bbe2845b5940a"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								I thought It'd be fun to try and clone the contact tracing app
+								our town implimented for COVID-19 precaution. This is where I
+								learned to rely on the library documentation instead of looking
+								for an article or youtube video.
+							</p>
+							<p>
+								<a href="https://tracing.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-left">
+						<div
+							id="typehoon-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/792a1d91e3094772ade459fbfa0ed0ef"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Made this project with an app written in react native and a
+								descrete event simulation written in python then made an API for
+								it. This project is for my friend's undergraduate thesis for our
+								municipality's typhoon evacuation plan.
+							</p>
+							<p>
+								<a href="https://type-hoon.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-right">
+						<div
+							id="crime-prediction-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/76b8475a784a4be09699dd0282d04c5b"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Used a dataset of crimes in our province to develop various
+								machine learning algorithms and made an API for it, however
+								given that only 3000 rows of data were usable, the accuracy of
+								the algorithms were low.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/crime-prediction/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-left">
+						<div
+							id="quiz-app-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/cb2789a698224b9aa3c0ae09fbdeb89d"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Did this project just for fun. Just played with Open Trivia
+								Database and Semantic UI.
+							</p>
+							<p>
+								<a href="https://quiz-app-45900.web.app/" target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-top-right">
+						<div
+							id="color-flikker-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/d0934ec60f1e4e428dc0a7c568246d28"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								Did a lot of small projects and this is one of the cleanest. I
+								made this to get myself comfortable with front-end development,
+								specifically javascript.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/color_flikker/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-left">
+						<div
+							id="weight-converter-vid-container"
+							style="position: relative; height: 100%"
+						>
+							<iframe
+								src="https://www.loom.com/embed/f09169ce64d04be1b1a0fbc472d8f2c9"
+								frameborder="0"
+								webkitallowfullscreen
+								mozallowfullscreen
+								allowfullscreen
+								style="
+									position: absolute;
+									margin: auto;
+									width: 100%;
+									height: 100%;
+								"
+							></iframe>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								I started learning javascript in my freshman year. I kept
+								hearing about javascript DOM manipulation on youtube so I made a
+								project to familiarize myself with it.
+							</p>
+							<p>
+								<a
+									href="https://neilalden.github.io/weight_converter/"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<!--  -->
+					<div id="" class="card card-bottom-center">
+						<div
+							id="lotus-golden-circle-vid-container"
+							class="slideshow-container"
+						>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/1.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/2.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/3.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/4.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/5.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/6.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="lotusSlides fade">
+								<img
+									src="assets/lotus/7.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+
+						<div class="vid-description-container">
+							<p>
+								I was studying laravel at the time I made this. This is my first
+								paid project which my friend asked me to make for their company
+								although the project was cancelled.
+							</p>
+							<p>
+								<a
+									href="https://github.com/neilalden/lotus_golden_circle"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+					<div id="" class="card card-bottom-center">
+						<div id="inventory-vid-container" class="slideshow-container">
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/1.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/2.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/3.jpg"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/4.jpg"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/5.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+							<div class="inventorySlides fade">
+								<img
+									src="assets/inventory/6.JPG"
+									style="
+										position: absolute;
+										margin: auto;
+										width: 100%;
+										object-fit: cover;
+									"
+								/>
+							</div>
+						</div>
+						<div class="vid-description-container">
+							<p>
+								This project is a desktop app made with c# using windows form
+								and MySQL. Made this one for my groupmate's business for our
+								final project in my freshman year.
+							</p>
+							<p>
+								<a
+									href="https://github.com/neilalden/Inventory_System"
+									target="_blank"
+									>view project</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="timeline">
+				<!-- <h4>Things I did during college</h4> -->
+				<div class="timeline">
+					<div class="container left">
+						<div class="content">
+							<h4>2021</h4>
+							<p>
+								Participated in
+								<a
+									style="text-decoration: underline"
+									href="assets/031909313018.pdf"
+									target="_blank"
+									>5<sup>th</sup> International Research Conference on
+									Innovations in Engineering, Science and Technology</a
+								>
+								hosted by Batangas State University.
+							</p>
+						</div>
+					</div>
+					<div class="container right">
+						<div class="content">
+							<h4>2019-2020</h4>
+							<p>
+								Became the
+								<a
+									style="text-decoration: underline"
+									href="assets/USER_SCOPED_TEMP_DATA_orca-image--1536126197.jpeg"
+									target="_blank"
+									>president</a
+								>
+								of Great Innovators Of Computer Technology Society and held
+								seminars.
+							</p>
+						</div>
+					</div>
+					<div class="container left">
+						<div class="content">
+							<h4>2018</h4>
+							<p>
+								Enrolled in computer science and won our college
+								<a
+									style="text-decoration: underline"
+									href="assets/2018.jpg"
+									target="_blank"
+								>
+									coding competition</a
+								>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="moreAboutMe">
+				<div class="section-container"></div>
+			</section>
+		</div>
 	</body>
 	<script src="index.js"></script>
 </html>
