@@ -1,6 +1,4 @@
 import cSharp from "../assets/c-sharp.png";
-import cheverLeft from "../assets/chever-left.png";
-import cheverRight from "../assets/chever-Right.png";
 import css from "../assets/css.png";
 import facebook from "../assets/facebook.png";
 import firebase from "../assets/firebase.png";
@@ -29,8 +27,6 @@ import tensorflow from "../assets/tensorflow.png";
 
 export const images = {
     cSharp,
-    cheverLeft,
-    cheverRight,
     css,
     facebook,
     firebase,
