@@ -1,0 +1,55 @@
+#about {
+	padding: 30px 10px;
+	text-align: left;
+}
+#info {
+	display: flex;
+	flex-direction: row;
+}
+#name-socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.social-media-img {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+#profile-picture img {
+	height: 150px;
+	width: 150px;
+}
+#skill-items {
+	display: flex;
+}
+.skill-img {
+	height: 50px;
+	margin-right: 10px;
+}
+@media only screen and (max-width: 400px) {
+	.skill-img {
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	.social-media-img {
+		height: 20px;
+		width: 20px;
+	}
+}
+.skill-percent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.bar-container {
+	background-color: #fff;
+	flex: 1;
+	height: 5px;
+	margin: 0 5px;
+}
+.bar {
+	background: #1e1e1e;
+	height: 5px;
+}
