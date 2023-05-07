@@ -4,6 +4,7 @@ body {
 	font-family: "Courier New", Courier, monospace;
 	color: #fff;
 	padding: 0 !important;
+	margin: 0 !important;
 	width: 100vw !important;
 	overflow-x: hidden;
 }

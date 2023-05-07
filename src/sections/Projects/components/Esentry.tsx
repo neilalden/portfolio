@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { images } from "../../../utils/images"
 
 const Esentry = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<React.SetStateAction<number>> }) => {
@@ -22,9 +23,11 @@ const Esentry = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<
             <div className="gap-15" />
             <div className="pagination-container">
                 {Projects.map((_, i) => {
-                    return <div className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
+                    return <div key={i} className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
                 })}
             </div>
+            <div className="gap-15" />
+            &nbsp;<a href="https://github.com/neilalden/esentry/" target="_blank" rel="noopener noreferrer">Open project</a>
 
             <div className="project-description">
                 <p>TECH STACK : </p>
@@ -41,10 +44,9 @@ const Esentry = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<
                 <div className="gap-15" />
                 <p>I interned for my college professor for a project for Department Of Science and Technology. The Project was for monitoring and forecasting water quality in tadlac lake. The forecasts are made by a RNN LSTM model deployed on a flask server</p>
                 <p>Features: Water Quality Monitoring and Forecasting</p>
-                👉&nbsp;<a href="https://github.com/neilalden/esentry/" target="_blank" rel="noopener noreferrer">Open project</a>
             </div>
         </>
     )
 }
 
-export default Esentry
+export default memo(Esentry)

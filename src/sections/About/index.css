@@ -24,7 +24,7 @@
 	display: flex;
 }
 .skill-img {
-	height: 50px;
+	height: 55px;
 	margin-right: 10px;
 }
 @media only screen and (max-width: 400px) {
@@ -52,4 +52,22 @@
 .bar {
 	background: #1e1e1e;
 	height: 5px;
+}
+.tab {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	justify-content: space-between;
+}
+.tab-item {
+	border-bottom: 1px solid #fff;
+	margin: 2px auto;
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+}
+.tab-active {
+	border: 1px solid #fff;
+	border-bottom: 0;
+	border-radius: 10px 10px 0 0;
 }

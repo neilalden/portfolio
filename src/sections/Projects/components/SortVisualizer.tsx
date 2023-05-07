@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { images } from "../../../utils/images"
 
 const SortVisualizer = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<React.SetStateAction<number>> }) => {
@@ -23,9 +24,11 @@ const SortVisualizer = ({ index, setIndex }: { index: number, setIndex: React.Di
 
             <div className="pagination-container">
                 {Projects.map((_, i) => {
-                    return <div className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
+                    return <div key={i} className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
                 })}
             </div>
+            <div className="gap-15" />
+            &nbsp;<a href="https://neilalden.github.io/sort-visualizer/" target="_blank" rel="noopener noreferrer">Open project</a>
 
             <div className="project-description">
                 <p>TECH STACK : </p>
@@ -37,10 +40,9 @@ const SortVisualizer = ({ index, setIndex }: { index: number, setIndex: React.Di
                 <div className="gap-15" />
                 <p>I made this project to practice my data structures and algorithms skills</p>
                 <p>Features: Sort Visualization</p>
-                👉&nbsp;<a href="https://neilalden.github.io/sort-visualizer/" target="_blank" rel="noopener noreferrer">Open project</a>
             </div>
         </>
     )
 }
 
-export default SortVisualizer
+export default memo(SortVisualizer)

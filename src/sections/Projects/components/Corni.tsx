@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { images } from "../../../utils/images"
 
 const Corni = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<React.SetStateAction<number>> }) => {
@@ -23,9 +24,11 @@ const Corni = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<Re
             <div className="gap-15" />
             <div className="pagination-container">
                 {Projects.map((_, i) => {
-                    return <div className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
+                    return <div key={i} className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
                 })}
             </div>
+            <div className="gap-15" />
+            &nbsp;<a href="https://corn-i.web.app/" target="_blank" rel="noopener noreferrer">Open project</a>
             <div className="project-description">
                 <p>TECH STACK : </p>
                 <div id="skill-items">
@@ -41,10 +44,9 @@ const Corni = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<Re
                 <div className="gap-15" />
                 <p>This project is for an undergraduate thesis for monitoring and forecasting crop soil nutrients. <br />The forecasts are made by a RNN LSTM model deployed on a flask server</p>
                 <p>Features: Soil Nutrients Monitoring and Forecasting, File Upload</p>
-                👉&nbsp;<a href="https://corn-i.web.app/" target="_blank" rel="noopener noreferrer">Open project</a>
             </div>
         </>
     )
 }
 
-export default Corni
+export default memo(Corni)

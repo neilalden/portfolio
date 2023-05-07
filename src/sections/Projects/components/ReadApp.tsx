@@ -1,3 +1,4 @@
+import { memo } from "react"
 import { images } from "../../../utils/images"
 
 const ReadApp = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<React.SetStateAction<number>> }) => {
@@ -23,9 +24,12 @@ const ReadApp = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<
             <div className="gap-15" />
             <div className="pagination-container">
                 {Projects.map((_, i) => {
-                    return <div className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
+                    return <div key={i} className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
                 })}
             </div>
+            <div className="gap-15" />
+            &nbsp;<a href="https://play.google.com/store/apps/details?id=com.readappv1" target="_blank" rel="noopener noreferrer">Open project</a>
+
             <div className="project-description">
                 <p>TECH STACK : </p>
                 <div id="skill-items">
@@ -36,10 +40,9 @@ const ReadApp = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<
                 <div className="gap-15" />
                 <p>This project is a collaboration of LBSCFI, UPLB, and LSPU. This project introduced me to mobile development through react native. </p>
                 <p>Features: Online and offline classroom, in-app messaging</p>
-                👉&nbsp;<a href="https://play.google.com/store/apps/details?id=com.readappv1" target="_blank" rel="noopener noreferrer">Open project</a>
             </div>
         </>
     )
 }
 
-export default ReadApp
+export default memo(ReadApp)
