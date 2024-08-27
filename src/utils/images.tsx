@@ -8,6 +8,7 @@ import git from "../assets/git.png";
 import html from "../assets/html.png";
 import java from "../assets/java.png";
 import javascript from "../assets/javascript.png";
+import typescript from "../assets/typescript.png";
 import linkedin from "../assets/linkedin.png";
 import mysql from "../assets/mysql.png";
 import nextjs from "../assets/nextjs.png";
@@ -23,6 +24,7 @@ import reactjs from "../assets/reactjs.png";
 import reactNative from "../assets/react-native.png";
 import sklearn from "../assets/sklearn.png";
 import tensorflow from "../assets/tensorflow.png";
+import PVET_SS from "../assets/PVET_SS.jpg";
 
 
 export const images = {
@@ -51,4 +53,6 @@ export const images = {
     reactNative,
     sklearn,
     tensorflow,
+    typescript,
+    PVET_SS,
 }

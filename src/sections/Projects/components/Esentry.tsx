@@ -1,8 +1,8 @@
 import { memo } from "react"
 import { images } from "../../../utils/images"
+import { ProjectCount } from ".."
 
 const Esentry = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<React.SetStateAction<number>> }) => {
-    const Projects: Array<number> = [1, 1, 1, 1]
     return (
         <>
             <div id="video-container">
@@ -22,7 +22,7 @@ const Esentry = ({ index, setIndex }: { index: number, setIndex: React.Dispatch<
             </div>
             <div className="gap-15" />
             <div className="pagination-container">
-                {Projects.map((_, i) => {
+                {ProjectCount.map((_, i) => {
                     return <div key={i} className={i === index ? "pagination pagination-active" : "pagination"} onClick={() => setIndex(i)} />
                 })}
             </div>

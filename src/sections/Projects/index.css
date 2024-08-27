@@ -3,9 +3,11 @@
 	padding: 0 !important;
 }
 #video-container {
-	background: #fff;
+	background: #434343;
 	min-height: 300px;
 	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
 }
 .project-description {
 	padding: 20px 10px;

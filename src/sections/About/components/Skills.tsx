@@ -11,8 +11,8 @@ const Skills = () => {
                     </div>
                 </div>
                 <div id="skill-items">
-                    <img src={images.reactNative} className="skill-img" />
                     <img src={images.reactjs} className="skill-img" />
+                    <img src={images.typescript} className="skill-img" />
                     <img src={images.javascript} className="skill-img" />
                     <img src={images.html} className="skill-img" />
                     <img src={images.css} className="skill-img" />
@@ -29,7 +29,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div id="skill-items">
-                    <img src={images.nextjs} className="skill-img" />
+                    <img src={images.reactNative} className="skill-img" />
                     <img src={images.nodejs} className="skill-img" />
                     <img src={images.python} className="skill-img" />
                     <img src={images.sklearn} className="skill-img" />
@@ -46,6 +46,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div id="skill-items">
+                    <img src={images.nextjs} className="skill-img" />
                     <img src={images.postgres} className="skill-img" />
                     <img src={images.flask} className="skill-img" />
                     <img src={images.tensorflow} className="skill-img" />

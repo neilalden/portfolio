@@ -5,6 +5,16 @@ const MoreAbout = () => {
             <ul>
                 <li className="box">
                     <span></span>
+                    <div className="title">Chief Technology Officer</div>
+                    <div className="sub-title">Camp Connection Inc.</div>
+                    {/* <div className="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, corrupti.</div> */}
+                    <div className="time">
+                        <span>Present</span>
+                        <span>July, 2023</span>
+                    </div>
+                </li>
+                <li className="box">
+                    <span></span>
                     <div className="title">Jr. React Native Developer</div>
                     <div className="sub-title">Medicomm Pacific, Inc.</div>
                     {/* <div className="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, corrupti.</div> */}
